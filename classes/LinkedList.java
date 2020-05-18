@@ -57,6 +57,24 @@ public class LinkedList {
   }
 
 
+  private void removePos(int pos){
+  		//get to the position, set the one before to the next one.
+  		Node curr = head;
+  		Node prev = null;
+  		while(pos> 0){
+  			
+  			if(pos == 1){
+  				prev = curr;
+  			}
+  			curr = curr.next;
+  			pos --; 
+  		}
+  		prev.next = curr.next;
+  		curr = null;
+  		size --;
+  }
+
+
   public static void main(String[] args){
 
   	LinkedList begin = new LinkedList();
@@ -67,10 +85,14 @@ public class LinkedList {
   	begin.addToHead(1);
   	begin.addAtPosition(2,2);
   	begin.add(8);
-  	begin.addAtPosition(142,4);
+  	begin.removePos(2);
   	//1,4,5,2,6,8
+  	Node curr = begin.head;
 
-  	System.out.println(begin.head.next.next.next.next.next.val);
+  	for(int i = 0; i < begin.size; i++){
+  		System.out.println(curr.val);
+  		curr = curr.next;
+  	}
     
   }
   public class Node{
