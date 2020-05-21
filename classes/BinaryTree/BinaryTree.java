@@ -151,7 +151,7 @@ public class BinaryTree{
 		a.addNode(8,a.root);
 		a.addNode(2,a.root);
 		a.remove(10);
-		System.out.println(a.size);
+		
     
   	}
 	public class Node{

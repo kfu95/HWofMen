@@ -77,6 +77,8 @@ public class LinkedList {
 
   public static void main(String[] args){
 
+    //strengths of LinkedList are fast insertion. 
+
   	LinkedList begin = new LinkedList();
 
   	begin.add(4);
