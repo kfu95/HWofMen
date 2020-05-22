@@ -59,7 +59,7 @@ public class LinkedList {
 
   private void removePos(int pos){
   		//get to the position, set the one before to the next one.
-  		Node curr = head;
+      Node curr = head;
   		Node prev = null;
   		while(pos> 0){
   			
@@ -73,6 +73,7 @@ public class LinkedList {
   		curr = null;
   		size --;
   }
+  // Iterator such as contains and such
 
 
   public static void main(String[] args){

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+//change to generic types 
 public class BinaryTree{
 	Node root;
 	int size = 1;
